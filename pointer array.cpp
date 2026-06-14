@@ -17,5 +17,15 @@ int main(){
 // both top and botom are equivalent //
     cout << arr[1] << endl;
 
+    for(int i = 0; i < 10; i++){
+        cout << *(arr + i )<< endl;
+    }
+
+    cout << "break" << endl;
+
+    for(int i = 0; i < 10; i++){
+        cout << *(&arr[9] - i) << endl;
+    }
+
     return 0;
 }
